@@ -1,0 +1,49 @@
+/* css variables */
+:root {
+    --body-font-size: 2rem;
+}
+
+body {
+    margin: 0rem 10rem;
+    font-size: var(--body-font-size);
+}
+#phone, #linkedin {
+    width: 2rem;
+    height: 1.5rem;
+}
+#gmail {
+    width: 2rem;
+    height: 1.8rem;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+body > div{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(var(--body-font-size) + 1rem);
+    font-family: 'Times New Roman', Times, serif;
+}
+.divider {
+    font-weight: bolder;
+    display: inline-block;
+    display: none;
+}
+header > div {
+    /* padding: 0.5rem; */
+    font-family: 'Times New Roman', Times, serif;
+}
+main > div#summary {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: calc(var(--body-font-size) - 0.5rem);
+}
+main#experience {
+
+}
+
