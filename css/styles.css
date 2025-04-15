@@ -1,0 +1,309 @@
+/* css variables */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+:root {
+  --v1-body-font-size: 2rem;
+  --v2-body-font-size: 1.75rem;
+  --v3-body-font-size: 1.55rem;
+}
+
+body #versions {
+  position: fixed;
+}
+
+.v1 {
+  margin: 0rem 10rem;
+}
+.v1 .companies .experience .title button {
+  display: none;
+}
+.v1 body {
+  font-size: var(--v1-body-font-size);
+  font-family: "Times New Roman", Times, serif;
+}
+.v1 body > #versions {
+  font-size: 0.8rem;
+  display: inline;
+  position: fixed;
+  right: 2rem;
+  padding: 2rem;
+}
+.v1 .name {
+  text-align: center;
+  font-size: calc(var(--v1-body-font-size));
+  font-weight: bold;
+}
+.v1 #phone, .v1 #linkedin {
+  width: 2rem;
+  height: 1.5rem;
+}
+.v1 #gmail {
+  width: 2rem;
+  height: 1.8rem;
+}
+.v1 header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.v1 body > div {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(var(--v1-body-font-size) + 1rem);
+  font-family: "Times New Roman", Times, serif;
+}
+.v1 .divider {
+  font-weight: bolder;
+  display: inline-block;
+  display: none;
+}
+.v1 header > div {
+  /* padding: 0.5rem; */
+  font-family: "Times New Roman", Times, serif;
+}
+.v1 main > div#summary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(var(--v1-body-font-size) - 0.5rem);
+}
+.v1 main > div > div > div {
+  display: flex;
+}
+.v1 main > div > div > div > div.company-icons {
+  /* width: 100px;
+  height: auto; */
+}
+.v1 div.company-icons > img {
+  width: 100px;
+  height: auto;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+.v1 div.experience {
+  font-size: calc(var(--v1-body-font-size) - 1rem);
+}
+.v1 div.experience > div.title {
+  font-size: calc(var(--v1-body-font-size) + 0.01rem);
+}
+.v1 div.experience > div.technologies, .v1 div.experience > div.timeline, .v1 div.experience > div.company {
+  font-size: calc(var(--v1-body-font-size) - 0.8rem);
+}
+.v1 #college {
+  font-size: calc(var(--v1-body-font-size) - 0.8rem);
+}
+.v1 #skills {
+  font-size: calc(var(--v1-body-font-size) - 0.8rem);
+}
+.v1 #awards {
+  font-size: calc(var(--v1-body-font-size) - 0.8rem);
+}
+.v1 #awards .company-icons > img {
+  width: 3rem;
+  margin: 0;
+}
+.v1 #awards > div:nth-of-type(1) {
+  font-size: calc(var(--v1-body-font-size) - 0.5rem);
+}
+
+.v2 {
+  margin: 0rem 10rem;
+}
+.v2 .companies .experience .title button {
+  display: none;
+}
+.v2 body {
+  font-size: var(--v2-body-font-size);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.v2 body > #versions {
+  font-size: 0.8rem;
+  display: inline;
+  position: absolute;
+  right: 2rem;
+  padding: 2rem;
+}
+.v2 .name {
+  text-align: center;
+  font-weight: bold;
+}
+.v2 #phone, .v2 #linkedin {
+  width: 2rem;
+  height: 1.5rem;
+}
+.v2 #gmail {
+  width: 2rem;
+  height: 1.8rem;
+}
+.v2 header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.v2 body > div {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(var(--v2-body-font-size) + 1rem);
+  font-family: "Times New Roman", Times, serif;
+}
+.v2 .divider {
+  font-weight: bolder;
+  display: inline-block;
+  display: none;
+}
+.v2 header > div {
+  /* padding: 0.5rem; */
+  font-family: "Times New Roman", Times, serif;
+}
+.v2 main > div#summary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(var(--v2-body-font-size) - 0.5rem);
+}
+.v2 main > div > div > div {
+  display: flex;
+}
+.v2 main > div > div > div > div.company-icons {
+  /* width: 100px;
+  height: auto; */
+}
+.v2 div.company-icons > img {
+  width: 100px;
+  height: auto;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+.v2 div.experience {
+  font-size: calc(var(--v2-body-font-size) - 1rem);
+}
+.v2 div.experience > div.title {
+  font-size: calc(var(--v2-body-font-size) + 0.01rem);
+}
+.v2 div.experience > div.technologies, .v2 div.experience > div.timeline, .v2 div.experience > div.company {
+  font-size: calc(var(--v2-body-font-size) - 0.8rem);
+}
+.v2 #college {
+  font-size: calc(var(--v2-body-font-size) - 0.8rem);
+}
+.v2 #skills {
+  font-size: calc(var(--v2-body-font-size) - 0.8rem);
+}
+.v2 #awards {
+  font-size: calc(var(--v2-body-font-size) - 0.8rem);
+}
+.v2 #awards .company-icons > img {
+  width: 3rem;
+  margin: 0;
+}
+.v2 #awards > div:nth-of-type(1) {
+  font-size: calc(var(--v2-body-font-size) - 0.5rem);
+}
+
+.v3 {
+  margin: 0rem 10rem;
+}
+.v3 body {
+  font-size: var(--v3-body-font-size);
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-optical-sizing: auto;
+}
+.v3 body > #versions {
+  font-size: 0.8rem;
+}
+.v3 .name {
+  text-align: center;
+  font-size: calc(var(--v3-body-font-size));
+  font-weight: bold;
+}
+.v3 #phone, .v3 #linkedin {
+  width: 2rem;
+  height: 1.5rem;
+}
+.v3 #gmail {
+  width: 2rem;
+  height: 1.8rem;
+}
+.v3 header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.v3 body > div {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(var(--v3-body-font-size) + 1rem);
+}
+.v3 .divider {
+  font-weight: bolder;
+  display: inline-block;
+  display: none;
+}
+.v3 header > div {
+  /* padding: 0.5rem; */
+}
+.v3 main .companies {
+  display: flex;
+}
+.v3 main .companies .company-icons img {
+  width: 70px;
+  height: auto;
+  margin-top: 0rem;
+  margin-right: 1rem;
+}
+.v3 main .companies .experience {
+  font-size: calc(var(--v3-body-font-size) - 1rem);
+}
+.v3 main .companies .experience .technologies, .v3 main .companies .experience .timeline, .v3 main .companies .experience .company {
+  font-size: calc(var(--v3-body-font-size) - 0.5rem);
+}
+.v3 main .companies .experience .title {
+  font-size: calc(var(--v3-body-font-size) + 0.01rem);
+}
+.v3 main .companies .experience .experience-description {
+  display: none;
+}
+.v3 main .companies .experience .experience-description ul {
+  font-size: 1rem;
+  font-style: italic;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.v3 main .companies .experience .experience-description ul li {
+  line-height: calc(var(--v3-body-font-size));
+  font-size: calc(var(--v3-body-font-size) - 0.35rem);
+}
+.v3 main #summary {
+  font-family: "Roboto Mono", monospace;
+  font-size: calc(var(--v3-body-font-size) - 0.5rem);
+}
+.v3 .companies .experience .technologies, .v3 .companies .experience .timeline, .v3 .companies .experience .company {
+  font-size: calc(var(--v3-body-font-size) - 0.5rem);
+}
+.v3 .companies .experience div.experience-description ul {
+  display: block;
+}
+.v3 #college {
+  font-size: calc(var(--v3-body-font-size) - 0.8rem);
+}
+.v3 #skills {
+  display: none;
+  font-size: calc(var(--v3-body-font-size) - 0.8rem);
+}
+.v3 #awards {
+  font-size: calc(var(--v3-body-font-size) - 0.8rem);
+}
+.v3 #awards .company-icons > img {
+  width: 3rem;
+  margin: 0;
+}
+.v3 #awards > div:nth-of-type(1) {
+  font-size: calc(var(--v3-body-font-size) - 0.5rem);
+}

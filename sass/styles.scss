@@ -1,0 +1,355 @@
+/* css variables */
+:root {
+    --v1-body-font-size: 2rem;
+    --v2-body-font-size: 1.75rem;
+    --v3-body-font-size: 1.55rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body #versions {
+    position: fixed;
+} 
+.v1 {
+    margin: 0rem 10rem;
+    .companies {
+        .experience {
+            .title {
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+    body {
+        font-size: var(--v1-body-font-size);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body > #versions {
+        font-size: 0.8rem;
+        display: inline;
+        position: fixed;
+        right: 2rem;
+        padding: 2rem;
+
+    }
+    .name {
+        text-align: center;
+        font-size: calc(var(--v1-body-font-size));
+        font-weight: bold;
+    }
+    #phone, #linkedin {
+        width: 2rem;
+        height: 1.5rem;
+    }
+    #gmail {
+        width: 2rem;
+        height: 1.8rem;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    body > div{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: calc(var(--v1-body-font-size) + 1rem);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .divider {
+        font-weight: bolder;
+        display: inline-block;
+        display: none;
+    }
+    header > div {
+        /* padding: 0.5rem; */
+        font-family: 'Times New Roman', Times, serif;
+    }
+    main > div#summary {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: calc(var(--v1-body-font-size) - 0.5rem);
+    }
+    
+    main > div > div > div {
+        display: flex;
+    }
+    main > div > div > div > div.company-icons {
+        /* width: 100px;
+        height: auto; */
+    }
+    div.company-icons > img {
+        width: 100px;
+        height: auto;
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+    div.experience {
+        font-size: calc(var(--v1-body-font-size) - 1rem);
+    }
+    div.experience > div.title {
+        font-size: calc(var(--v1-body-font-size) + 0.01rem);
+    }
+    div.experience > div.technologies, div.experience > div.timeline, div.experience > div.company {
+        font-size: calc(var(--v1-body-font-size) - 0.8rem);
+    }
+    #college {
+        font-size: calc(var(--v1-body-font-size) - 0.8rem);
+    }
+    #skills {
+        font-size: calc(var(--v1-body-font-size) - 0.8rem);
+    }
+    #awards {
+        font-size: calc(var(--v1-body-font-size) - 0.8rem);
+    }
+    #awards .company-icons > img {
+        width: 3rem;
+        margin: 0;
+    }
+    #awards > div:nth-of-type(1) {
+        font-size: calc(var(--v1-body-font-size) - 0.5rem);
+    }
+}
+.v2 {
+    margin: 0rem 10rem;
+    .companies {
+        .experience {
+            .title {
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+    body {
+        font-size: var(--v2-body-font-size);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body > #versions {
+        font-size: 0.8rem;
+        display: inline;
+        position: absolute;
+        right: 2rem;
+        padding: 2rem;
+    }
+    .name {
+        text-align: center;
+        font-weight: bold;
+    }
+    #phone, #linkedin {
+        width: 2rem;
+        height: 1.5rem;
+    }
+    #gmail {
+        width: 2rem;
+        height: 1.8rem;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    body > div{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: calc(var(--v2-body-font-size) + 1rem);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .divider {
+        font-weight: bolder;
+        display: inline-block;
+        display: none;
+    }
+    header > div {
+        /* padding: 0.5rem; */
+        font-family: 'Times New Roman', Times, serif;
+    }
+    main > div#summary {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: calc(var(--v2-body-font-size) - 0.5rem);
+    }
+    
+    main > div > div > div {
+        display: flex;
+    }
+    main > div > div > div > div.company-icons {
+        /* width: 100px;
+        height: auto; */
+    }
+    div.company-icons > img {
+        width: 100px;
+        height: auto;
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+    div.experience {
+        font-size: calc(var(--v2-body-font-size) - 1rem);
+    }
+    div.experience > div.title {
+        font-size: calc(var(--v2-body-font-size) + 0.01rem);
+    }
+    div.experience > div.technologies, div.experience > div.timeline, div.experience > div.company {
+        font-size: calc(var(--v2-body-font-size) - 0.8rem);
+    }
+    #college {
+        font-size: calc(var(--v2-body-font-size) - 0.8rem);
+    }
+    #skills {
+        font-size: calc(var(--v2-body-font-size) - 0.8rem);
+    }
+    #awards {
+        font-size: calc(var(--v2-body-font-size) - 0.8rem);
+    }
+    #awards .company-icons > img {
+        width: 3rem;
+        margin: 0;
+    }
+    #awards > div:nth-of-type(1) {
+        font-size: calc(var(--v2-body-font-size) - 0.5rem);
+    }
+}
+.v3 {
+    margin: 0rem 10rem;
+    body {
+        font-size: var(--v3-body-font-size);
+        font-family: "Big Shoulders Stencil", sans-serif;
+        font-optical-sizing: auto;
+    }
+    body > #versions {
+        font-size: 0.8rem;
+        
+    }
+    .name {
+        text-align: center;
+        font-size: calc(var(--v3-body-font-size));
+        font-weight: bold;
+    }
+    #phone, #linkedin {
+        width: 2rem;
+        height: 1.5rem;
+    }
+    #gmail {
+        width: 2rem;
+        height: 1.8rem;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    body > div{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: calc(var(--v3-body-font-size) + 1rem);
+    }
+    .divider {
+        font-weight: bolder;
+        display: inline-block;
+        display: none;
+    }
+    header > div {
+        /* padding: 0.5rem; */
+        // font-family: 'Times New Roman', Times, serif;
+    }
+    main {
+        .companies {
+            display: flex;
+            .company-icons {
+                img {
+                    width: 70px;
+                    height: auto;
+                    margin-top: 0rem;
+                    margin-right: 1rem;
+                }
+            }
+            .experience {
+                font-size: calc(var(--v3-body-font-size) - 1rem);
+                .technologies, .timeline, .company {
+                    font-size: calc(var(--v3-body-font-size) - 0.5rem);
+                }
+                .title {
+                    font-size: calc(var(--v3-body-font-size) + 0.01rem);
+                }
+                .experience-description {
+                    display: none;
+                    ul {
+                        // position: absolute;
+                        // list-style-type: none;
+                        font-size: 1rem;
+                        // background-color: #045067;
+                        // color: #0ff391;
+                        font-style: italic;
+                        // border: 1px solid #0ff391;
+                        // border-radius: 20px;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        // right: 2.4%;
+                        // top: 18%;
+                        // height: 80%;
+                        // opacity: 0.9;
+                        // margin: 0rem;
+                        li {
+                            line-height: calc(var(--v3-body-font-size));
+                            font-size: calc(var(--v3-body-font-size) - 0.35rem);
+                        }
+                    }
+                }
+            }
+        }
+        #summary {
+            font-family: "Roboto Mono", monospace;
+            font-size: calc(var(--v3-body-font-size) - 0.5rem);
+        }
+    }
+    
+      
+
+    // div.experience > div.technologies, div.experience > div.timeline, div.experience > div.company {
+    //     font-size: calc(var(--v3-body-font-size) - 0.8rem);
+    // }
+    .companies {
+        .experience {
+            .technologies, .timeline, .company {
+                font-size: calc(var(--v3-body-font-size) - 0.5rem);
+            }
+            div.experience-description {
+                ul {
+                    display: block;
+                }
+            }
+            &:hover {
+            //    background-color: #045067;
+            //    color: #fff;
+            //    width: -webkit-fill-available; 
+            //    cursor: pointer;
+            }
+        }
+    }
+    #college {
+        font-size: calc(var(--v3-body-font-size) - 0.8rem);
+    }
+    #skills {
+        display: none;
+        font-size: calc(var(--v3-body-font-size) - 0.8rem);
+    }
+    #awards {
+        font-size: calc(var(--v3-body-font-size) - 0.8rem);
+    }
+    #awards .company-icons > img {
+        width: 3rem;
+        margin: 0;
+    }
+    #awards > div:nth-of-type(1) {
+        font-size: calc(var(--v3-body-font-size) - 0.5rem);
+    } 
+}
