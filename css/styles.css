@@ -616,24 +616,30 @@ footer p {
     transform: translateY(0);
 }
 
-/* ===== Responsive Design ===== */
+/* ===== Responsive — Tablet (768px) ===== */
 @media (max-width: 768px) {
     :root {
         --nav-height: 56px;
     }
 
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    /* -- Nav -- */
     .nav-links {
         display: none;
         position: fixed;
         top: var(--nav-height);
         left: 0;
         right: 0;
+        bottom: 0;
         background: rgba(10, 10, 11, 0.98);
         backdrop-filter: blur(12px);
         flex-direction: column;
-        padding: 1.5rem;
+        padding: 1rem 1.5rem;
         gap: 0;
-        border-bottom: 1px solid var(--color-border);
+        overflow-y: auto;
     }
 
     .nav-links.open {
@@ -651,7 +657,7 @@ footer p {
     .nav-links a {
         display: block;
         padding: 1rem 0;
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     .nav-links a::after {
@@ -674,56 +680,363 @@ footer p {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
+    /* -- Sections -- */
     section {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    /* -- Hero -- */
+    #hero {
+        min-height: 100svh;
+        padding: calc(var(--nav-height) + 1.5rem) 1.25rem 3rem;
+    }
+
+    .hero-greeting {
+        font-size: 0.9rem;
     }
 
     .hero-name {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-title {
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-summary {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-actions {
+        margin-bottom: 2rem;
+    }
+
+    /* -- About -- */
+    .about-content p {
+        font-size: 0.95rem;
     }
 
     .about-highlights {
         gap: 2rem;
     }
 
+    .highlight-number {
+        font-size: 2rem;
+    }
+
+    /* -- Timeline -- */
     .timeline {
-        padding-left: 1.5rem;
+        padding-left: 1.25rem;
     }
 
     .timeline-marker {
-        left: -1.5rem;
+        left: -1.25rem;
+        width: 10px;
+        height: 10px;
     }
 
+    .timeline-item {
+        padding-bottom: 2rem;
+    }
+
+    .timeline-content {
+        padding: 1.25rem;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .job-title {
+        font-size: 1.05rem;
+    }
+
+    .job-tech {
+        font-size: 0.75rem;
+        padding: 0.6rem;
+    }
+
+    .job-details li {
+        font-size: 0.85rem;
+    }
+
+    /* -- Skills -- */
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
+    .skill-category {
+        padding: 1.25rem;
+    }
+
+    /* -- Education -- */
     .education-awards-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .education-card,
+    .award-card {
+        padding: 1.25rem;
+    }
+
+    .card-icon img {
+        width: 44px;
+        height: 44px;
+    }
+
+    /* -- Contact -- */
+    .contact-text {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
     }
 
     .contact-links {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem 1.25rem;
+        font-size: 0.85rem;
     }
 }
 
+/* ===== Responsive — Phone (480px) ===== */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* -- Hero -- */
+    #hero {
+        padding: calc(var(--nav-height) + 1rem) 1rem 2rem;
+        align-items: flex-start;
+        padding-top: calc(var(--nav-height) + 3rem);
+    }
+
+    .hero-greeting {
+        font-size: 0.85rem;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-title {
+        font-size: 1.05rem;
+    }
+
+    .hero-summary {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
     .hero-actions {
         flex-direction: column;
+        gap: 0.75rem;
     }
 
     .btn {
         justify-content: center;
         text-align: center;
+        width: 100%;
+        padding: 0.85rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-social {
+        gap: 1.5rem;
+    }
+
+    .hero-social a svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* -- Sections -- */
+    section {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 1.75rem;
+    }
+
+    /* -- About -- */
+    .about-content p {
+        font-size: 0.9rem;
+        line-height: 1.7;
     }
 
     .about-highlights {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .highlight {
+        align-items: center;
+        text-align: center;
+        flex: 1;
+    }
+
+    .highlight-number {
+        font-size: 1.75rem;
+    }
+
+    .highlight-label {
+        font-size: 0.75rem;
+    }
+
+    /* -- Timeline -- */
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline::before {
+        width: 1px;
+    }
+
+    .timeline-marker {
+        left: -1rem;
+        width: 8px;
+        height: 8px;
+        transform: translateX(-3.5px);
+        box-shadow: 0 0 0 2px var(--color-accent);
+    }
+
+    .timeline-item {
+        padding-bottom: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+        border-radius: 10px;
     }
 
     .timeline-header {
         flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .company-logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .job-title {
+        font-size: 1rem;
+    }
+
+    .company-name {
+        font-size: 0.85rem;
+    }
+
+    .job-duration {
+        font-size: 0.75rem;
+    }
+
+    .job-tech {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+        word-break: break-word;
+    }
+
+    .job-details {
+        padding-left: 1rem;
+    }
+
+    .job-details li {
+        font-size: 0.82rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.55;
+    }
+
+    /* -- Skills -- */
+    .skill-category {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .skill-category h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .skill-tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    /* -- Education -- */
+    .education-card,
+    .award-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.25rem 1rem;
+        border-radius: 10px;
+    }
+
+    .card-icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .card-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .card-content .degree,
+    .card-content p:last-child {
+        font-size: 0.82rem;
+    }
+
+    /* -- Contact -- */
+    .contact-text {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 0.85rem 1rem;
+        border-radius: 10px;
+        font-size: 0.82rem;
+    }
+
+    .contact-item svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* -- Footer -- */
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    footer p {
+        font-size: 0.75rem;
     }
 }
