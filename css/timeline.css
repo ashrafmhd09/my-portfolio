@@ -1180,6 +1180,22 @@ body {
    Responsive Design
    ======================================== */
 
+@media (max-width: 640px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .contact-card {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+        word-break: break-word;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: absolute;
@@ -1308,6 +1324,28 @@ body {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    .contact-card {
+        padding: var(--space-lg);
+    }
+
+    .contact-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .contact-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-info h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1329,5 +1367,41 @@ body {
 
     .content-card {
         padding: var(--space-md);
+    }
+
+    .contact-section {
+        padding: var(--space-2xl) var(--space-md);
+    }
+
+    .contact-grid {
+        gap: var(--space-md);
+        margin-top: var(--space-lg);
+    }
+
+    .contact-card {
+        padding: var(--space-md);
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+    }
+
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contact-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-info h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+        word-break: break-all;
     }
 }
