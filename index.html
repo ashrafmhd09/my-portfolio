@@ -3,323 +3,710 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashraf Mohammad | Senior Developer</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Ashraf Mohammad | A Developer's Journey</title>
+    <link rel="stylesheet" href="./css/timeline.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <script src="./js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
 
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">AM</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">Ashraf Mohammad</div>
+        <div class="nav-menu">
+            <a href="#hero" class="nav-link">Start</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
         <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">Ashraf Mohammad</h1>
-            <p class="hero-title">Senior Developer &amp; Engineer</p>
-            <p class="hero-summary">Results-driven IT professional with 12+ years of experience building interactive, scalable web applications using PHP, JavaScript, Drupal, and modern frameworks.</p>
-            <div class="hero-actions">
-                <a href="#experience" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hello, I'm</span>
+                    <span class="title-name">Ashraf Mohammad</span>
+                </h1>
+                <p class="hero-subtitle">A Developer's Journey Through Innovation</p>
+                <p class="hero-description">
+                    12+ years of crafting scalable web solutions, leading migrations, and building enterprise applications
+                </p>
+                <a href="#journey" class="hero-cta">
+                    <span>Explore My Story</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 4L10 16M10 16L16 10M10 16L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
-            <div class="hero-social">
-                <a href="mailto:ashrafmhd09@gmail.com" aria-label="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/ashrafmhd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                </a>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="9">0</span>
+                    <span class="stat-label">Positions</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="20">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to begin</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Story Introduction -->
+    <section class="story-intro" id="intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="section-title">The Journey Begins</h2>
+                <p class="intro-text">
+                    From a curious engineering student in 2006 to a Senior Engineer architecting enterprise solutions,
+                    my career has been a continuous evolution of learning, building, and innovating.
+                    This is the story of how passion for technology transformed into expertise.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Results-driven IT professional with extensive experience in interactive website development using the LAMP stack. Expertise in PHP, Python, Drupal, WordPress, HTML5, SCSS, JavaScript, and modern frameworks like Angular and ReactJS.</p>
-                <p>Skilled in building custom, database-driven, and scalable web applications, leveraging cloud technologies such as AWS and Acquia. Adept at performance optimization, security enhancements, and cross-functional team collaboration.</p>
-                <div class="about-highlights">
-                    <div class="highlight">
-                        <span class="highlight-number">12+</span>
-                        <span class="highlight-label">Years Experience</span>
-                    </div>
-                    <div class="highlight">
-                        <span class="highlight-number">6</span>
-                        <span class="highlight-label">Companies</span>
-                    </div>
-                    <div class="highlight">
-                        <span class="highlight-number">10+</span>
-                        <span class="highlight-label">Technologies</span>
-                    </div>
-                </div>
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="journey">
+        <div class="timeline-controls">
+            <h2 class="section-title">My Journey</h2>
+            <div class="view-toggle">
+                <span class="toggle-label">Timeline View:</span>
+                <button class="toggle-btn active" data-view="vertical" aria-label="Vertical view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                    <span>Vertical</span>
+                </button>
+                <button class="toggle-btn" data-view="horizontal" aria-label="Horizontal view">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                    <span>Horizontal</span>
+                </button>
             </div>
         </div>
-    </section>
+        <div class="timeline-wrapper">
+            <button class="timeline-nav prev" id="timelineNavPrev" aria-label="Scroll left">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="timeline-container" data-layout="vertical">
+                <div class="timeline-line"></div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <img src="./images/dsfederal-logo.png" alt="DSFederal" class="company-logo">
-                            <div>
-                                <h3 class="job-title">Senior Drupal Developer</h3>
-                                <p class="company-name">DSFederal</p>
-                                <p class="job-duration">Jan 2022 - Present</p>
+            <!-- Veolia 2025-Present -->
+            <article class="timeline-item current" data-year="2025-Present">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">May 2025 - Present</div>
+                    <div class="content-card current">
+                        <div class="card-header">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Current Chapter: Innovating Utility Solutions</h3>
+                                <p class="card-subtitle">Senior Engineer</p>
                             </div>
                         </div>
-                        <div class="job-tech">PHP 7/8, Drupal 6/7/8/9/10, ES6, WordPress 5, LAMP, Amazon EC2, Amazon RDS, Bamboo, Apache Solr, Varnish 6/7, Memcached, USWDS, SCSS, Composer, Git, NodeJS, Jenkins, Cypress, Linux</div>
-                        <ul class="job-details">
-                            <li>Designed and implemented OOP-based PHP solutions in custom Drupal modules and themes, following SOLID principles and Drupal's service container architecture.</li>
-                            <li>Developed and maintained Drupal (8/9/10) and WordPress websites, implementing custom themes and plugins.</li>
-                            <li>Integrated Drupal's Plugin API, Entity API, and Hooks to extend core functionality efficiently.</li>
-                            <li>Created reusable ReactJS components following OOP patterns for frontend development.</li>
-                            <li>Implemented CI/CD pipelines using Acquia Pipelines, automating deployments and improving workflows.</li>
-                            <li>Successfully led Acquia to AWS migration project for ONC &amp; ISA, ensuring seamless transition while minimizing downtime.</li>
-                            <li>Led design and implementation of disaster recovery and high availability solutions.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <img src="./images/arxscan-logo-new.png" alt="Arxscan" class="company-logo">
-                            <div>
-                                <h3 class="job-title">Senior Engineer</h3>
-                                <p class="company-name">Arxscan</p>
-                                <p class="job-duration">May 2017 - Dec 2021</p>
+                        <div class="card-company">Veolia</div>
+                        <div class="card-badge current">Currently Building</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                Today, I architect enterprise water management solutions at Veolia. Integrating complex payment gateways
+                                (ACI/Speedpay, Spreedly), CC&B billing systems, and real-time water meter data—I'm building infrastructure
+                                that serves communities. Leading AI-assisted development initiatives and mentoring the next generation of
+                                engineers, I'm not just writing code—I'm shaping the future of utility technology.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Architecting Drupal 10/11 full-stack solutions with PHP 8</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Integrating complex payment gateways (ACI, Spreedly)</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Building CC&B billing system integrations</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Engineering water meter real-time data systems</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Leading AI-assisted SDLC initiatives</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Providing L1/L2/L3 technical support</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Mentoring junior engineers and interns</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">PHP 8</span>
+                                <span class="tech-tag">Drupal 10/11</span>
+                                <span class="tech-tag">Symfony</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">ACI/Speedpay</span>
+                                <span class="tech-tag">Spreedly</span>
+                                <span class="tech-tag">CC&B</span>
+                                <span class="tech-tag">GitLab</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">AI-SDLC</span>
                             </div>
                         </div>
-                        <div class="job-tech">LAMP, ES5/6, Angular, d3js, SVG, API, Tableau</div>
-                        <ul class="job-details">
-                            <li>Resolved cross-browser compatibility issues in Angular applications, ensuring seamless user experience across platforms.</li>
-                            <li>Designed and developed reports using Tableau Desktop, transforming complex data into actionable insights.</li>
-                            <li>Developed custom data connectors to efficiently extract and integrate data from various sources.</li>
-                            <li>Built responsive UI components in Angular, adhering to modern design principles.</li>
-                            <li>Developed Python scripts to interact with Tableau Server, automating administrative tasks.</li>
-                        </ul>
                     </div>
                 </div>
+            </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <img src="./images/sogeti-icon.png" alt="Sogeti" class="company-logo">
-                            <div>
-                                <h3 class="job-title">Senior Consultant</h3>
-                                <p class="company-name">Sogeti</p>
-                                <p class="job-duration">Dec 2015 - Feb 2017</p>
+            <!-- DS Federal 2022-2025 -->
+            <article class="timeline-item" data-year="2022-2025">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Jan 2022 - May 2025</div>
+                    <div class="content-card highlight">
+                        <div class="card-header">
+                            <div class="card-icon">🏆</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Enterprise Leadership & Recognition</h3>
+                                <p class="card-subtitle">Senior PHP Developer</p>
                             </div>
                         </div>
-                        <div class="job-tech">Angular, Drupal 7, RestWS, Twig, Fast Importer, Drush, PHP, OOP, Behat, PHPUnit, Drupal Console, Automation testing, Drupal 8 API</div>
-                        <ul class="job-details">
-                            <li>Designed, developed, and tested dynamic AngularJS applications, ensuring high performance and maintainability.</li>
-                            <li>Built RESTful APIs in Drupal 7 using the RESTws module, enabling seamless integration with Angular applications.</li>
-                            <li>Implemented automated testing strategies, including PHPUnit and Behat, to enhance code quality.</li>
-                            <li>Created Proof of Concepts for Twig template engine integration and fast data import into Drupal 7.</li>
-                            <li>Developed custom Drupal modules using Object-Oriented PHP and Drupal Console.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <img src="./images/digital-pulp-icon.png" alt="Digital Pulp" class="company-logo">
-                            <div>
-                                <h3 class="job-title">Drupal Developer</h3>
-                                <p class="company-name">Digital Pulp</p>
-                                <p class="job-duration">Feb 2015 - Nov 2015</p>
+                        <div class="card-company">DS Federal</div>
+                        <div class="card-badge">Most Inspirational Employee - Aug 2022</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                At DS Federal, I reached new heights. Recognized as "Most Inspirational Employee," I led critical
+                                infrastructure projects and mentored junior developers. I architected the Acquia to AWS migration for
+                                ONC & ISA—a complex endeavor requiring zero downtime. Built with Drupal 8/9/10/11, Laravel, and modern
+                                frameworks, I designed solutions that weren't just functional, they were transformational.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🏅</span>
+                                    <span>Awarded Most Inspirational Employee (Aug 2022)</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Led Acquia to AWS migration with zero downtime</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Designed OOP solutions with SOLID principles</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Built RESTful APIs with Laravel & Eloquent ORM</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Implemented disaster recovery & high availability</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Architected Docker-based CI/CD with Jenkins</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Mentored junior developers and conducted code reviews</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">PHP 7/8</span>
+                                <span class="tech-tag">Drupal 8/9/10/11</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">CodeIgniter</span>
+                                <span class="tech-tag">ReactJS</span>
+                                <span class="tech-tag">WordPress 5</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">AWS EC2/RDS</span>
+                                <span class="tech-tag">Acquia Cloud</span>
+                                <span class="tech-tag">Varnish 6/7</span>
+                                <span class="tech-tag">Memcached</span>
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Cypress</span>
                             </div>
                         </div>
-                        <div class="job-tech">Drupal 7, Node queue, Apache Solr, Panel Blocks, Search API, KnockoutJS, Git, HTML, CSS</div>
-                        <ul class="job-details">
-                            <li>Integrated Apache Solr with Drupal 7, optimizing search functionality for improved performance and relevance.</li>
-                            <li>Developed a Search API using Knockout.js, enabling dynamic client-side search.</li>
-                            <li>Created panel blocks as a Drupal site builder, improving content layout and flexibility.</li>
-                            <li>Resolved merge conflicts and debugged critical issues, maintaining code stability.</li>
-                        </ul>
                     </div>
                 </div>
+            </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <img src="./images/martha-stewart-icon.jpg" alt="Martha Stewart Living" class="company-logo">
-                            <div>
-                                <h3 class="job-title">Application Developer</h3>
-                                <p class="company-name">Martha Stewart Living Omni Media</p>
-                                <p class="job-duration">Jul 2014 - Oct 2014</p>
+            <!-- Arxscan 2017-2021 -->
+            <article class="timeline-item" data-year="2017-2021">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">May 2017 - Dec 2021</div>
+                    <div class="content-card highlight">
+                        <div class="card-header">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Data Visualization Expertise</h3>
+                                <p class="card-subtitle">Senior PHP Engineer</p>
                             </div>
                         </div>
-                        <div class="job-tech">APIs, A/B Testing, PHPStorm, XDebug, Chrome Debugger, Git</div>
-                        <ul class="job-details">
-                            <li>Developed and optimized user registration APIs across multiple platforms.</li>
-                            <li>Led A/B testing initiatives for visual website testing, driving data-backed improvements.</li>
-                            <li>Contributed to code reviews and knowledge-sharing sessions.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <img src="./images/tcs-icon.png" alt="TCS" class="company-logo">
-                            <div>
-                                <h3 class="job-title">IT Engineer</h3>
-                                <p class="company-name">TCS</p>
-                                <p class="job-duration">Sep 2012 - May 2014</p>
+                        <div class="card-company">Arxscan</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                For nearly 5 years at Arxscan, I expanded into the world of data visualization and business intelligence.
+                                I designed reports with Tableau, transformed complex datasets into actionable insights, and built responsive
+                                Angular components. This role taught me that data without visualization is just numbers—but with the right
+                                presentation, it becomes knowledge.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Designed Tableau reports transforming data into insights</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Maintained and optimized Tableau Server</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Built responsive Angular UI components</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Developed Python scripts for Tableau automation</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Created custom data connectors for multiple sources</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">d3.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">QlikView</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Azure</span>
                             </div>
                         </div>
-                        <div class="job-tech">HTML, CSS, JavaScript, MySQL, Optimization, UI/UX</div>
-                        <ul class="job-details">
-                            <li>Analyzed and translated functional requirements into technical specifications.</li>
-                            <li>Led website optimization efforts, enhancing performance and user experience.</li>
-                            <li>Oversaw database optimization, focusing on performance, scalability, and efficient data management.</li>
-                            <li>Developed custom modules tailored to specific client needs.</li>
-                        </ul>
                     </div>
                 </div>
+            </article>
+
+            <!-- Sogeti 2015-2017 -->
+            <article class="timeline-item" data-year="2015-2017">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Dec 2015 - Feb 2017</div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎯</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Consulting & Innovation</h3>
+                                <p class="card-subtitle">Senior PHP Consultant</p>
+                            </div>
+                        </div>
+                        <div class="card-company">Sogeti</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                As a Senior Consultant, I embraced the challenge of innovation. I created Proof of Concepts for
+                                integrating Twig into Drupal 7 and fast data imports. Built RESTful APIs connecting Drupal with
+                                Angular applications. Implemented automated testing with PHPUnit and Behat—because quality code
+                                isn't optional, it's essential.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Developed RESTful APIs with Drupal 7 & Angular integration</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Created POCs for Twig engine and fast data import</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Implemented automated testing (PHPUnit, Behat)</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Built custom modules with OOP and Drupal Console</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Drupal 7</span>
+                                <span class="tech-tag">RESTws</span>
+                                <span class="tech-tag">Twig</span>
+                                <span class="tech-tag">PHPUnit</span>
+                                <span class="tech-tag">Behat</span>
+                                <span class="tech-tag">Drupal Console</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Digital Pulp 2015 -->
+            <article class="timeline-item" data-year="2015">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Feb 2015 - Nov 2015</div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔍</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Mastering Search & Discovery</h3>
+                                <p class="card-subtitle">Drupal Developer</p>
+                            </div>
+                        </div>
+                        <div class="card-company">Digital Pulp</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                At Digital Pulp, I specialized in search technologies, integrating Apache Solr with Drupal 7 to
+                                deliver lightning-fast, relevant search results. I built dynamic search experiences using Knockout.js,
+                                proving that search is not just about finding—it's about discovering.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Integrated Apache Solr for optimized search</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Developed dynamic Search API with Knockout.js</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Participated in Drupal community meetups</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Drupal 7</span>
+                                <span class="tech-tag">Apache Solr</span>
+                                <span class="tech-tag">Knockout.js</span>
+                                <span class="tech-tag">Search API</span>
+                                <span class="tech-tag">Panel Blocks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Martha Stewart 2014 -->
+            <article class="timeline-item" data-year="2014">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Jul 2014 - Oct 2014</div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🚀</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Enterprise Experience</h3>
+                                <p class="card-subtitle">Drupal Application Developer</p>
+                            </div>
+                        </div>
+                        <div class="card-company">Martha Stewart Living Omnimedia</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                Joining a renowned media company was a pivotal moment. I developed user registration APIs across
+                                multiple platforms and led A/B testing initiatives that drove data-backed improvements to user
+                                experiences—learning that great code serves great user experiences.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Optimized multi-platform user registration APIs</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Led A/B testing for UI improvements</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Drupal APIs</span>
+                                <span class="tech-tag">A/B Testing</span>
+                                <span class="tech-tag">PHPStorm</span>
+                                <span class="tech-tag">XDebug</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- IT Engineer 2012-2014 -->
+            <article class="timeline-item" data-year="2012-2014">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Sep 2012 - May 2014</div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">⚙️</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">Building the Craft</h3>
+                                <p class="card-subtitle">IT Engineer</p>
+                            </div>
+                        </div>
+                        <div class="card-company">CMC LTD</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                Promoted to IT Engineer, I dove deep into translating business requirements into technical solutions.
+                                This role shaped my understanding of the full development lifecycle—from UI design to database
+                                optimization, from performance tuning to custom module development.
+                            </p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Led website and database optimization initiatives</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Developed custom modules for client needs</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">✓</span>
+                                    <span>Collaborated with design teams on UI/UX</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Trainee 2012 -->
+            <article class="timeline-item" data-year="2012">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Feb 2012 - Jun 2012</div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🌱</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">First Steps in the Industry</h3>
+                                <p class="card-subtitle">Trainee</p>
+                            </div>
+                        </div>
+                        <div class="card-company">CMC LTD</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                My professional journey took flight at CMC LTD as a trainee. These crucial months were about
+                                absorbing everything—from development practices to team dynamics, laying the groundwork for
+                                what would become a lifelong career in technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Education 2006-2010 -->
+            <article class="timeline-item" data-year="2006-2010">
+                <div class="timeline-marker">
+                    <div class="marker-ring"></div>
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2006 - 2010</div>
+                    <div class="content-card education">
+                        <div class="card-header">
+                            <div class="card-icon">🎓</div>
+                            <div class="card-title-group">
+                                <h3 class="card-title">The Foundation</h3>
+                                <p class="card-subtitle">Bachelor of Engineering - Information Technology</p>
+                            </div>
+                        </div>
+                        <div class="card-company">M.J. College of Engineering and Technology</div>
+                        <div class="card-body">
+                            <p class="story-text">
+                                Every great journey starts with a single step. Mine began at M.J. College of Engineering and Technology,
+                                where I discovered my passion for building digital solutions. As a student leader, I led the student's
+                                council, learning early on that great technology comes from great teamwork.
+                            </p>
+                            <div class="highlights">
+                                <span class="highlight-tag">Leadership</span>
+                                <span class="highlight-tag">IT Fundamentals</span>
+                                <span class="highlight-tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
             </div>
+            <button class="timeline-nav next" id="timelineNavNext" aria-label="Scroll right">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section class="skills-section" id="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Technical Arsenal</h2>
+            <p class="section-subtitle">Tools and technologies mastered through years of hands-on experience</p>
+
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Languages &amp; Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">ReactJS</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">d3.js</span>
-                        <span class="skill-tag">Knockout.js</span>
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3>Languages & Frameworks</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">PHP</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Symfony</div>
+                        <div class="skill-item">Laravel</div>
+                        <div class="skill-item">CodeIgniter</div>
+                        <div class="skill-item">Angular</div>
+                        <div class="skill-item">ReactJS</div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>CMS &amp; Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Drupal 7/8/9/10</span>
-                        <span class="skill-tag">WordPress 5</span>
-                        <span class="skill-tag">Acquia</span>
-                        <span class="skill-tag">AWS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases &amp; Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Apache Solr</span>
-                        <span class="skill-tag">Memcached</span>
-                        <span class="skill-tag">Varnish</span>
-                        <span class="skill-tag">Fast CGI</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps &amp; CI/CD</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Bamboo</span>
-                        <span class="skill-tag">Composer</span>
-                        <span class="skill-tag">Drush</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud &amp; Infrastructure</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Amazon EC2</span>
-                        <span class="skill-tag">Amazon RDS</span>
-                        <span class="skill-tag">Microsoft Azure</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Testing &amp; Automation</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Cypress</span>
-                        <span class="skill-tag">PHPUnit</span>
-                        <span class="skill-tag">Behat</span>
-                        <span class="skill-tag">Shell Scripting</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>BI &amp; Data Visualization</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">QlikView</span>
-                        <span class="skill-tag">Power BI</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Education & Awards Section -->
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title">Education &amp; Awards</h2>
-            <div class="education-awards-grid">
-                <div class="education-card">
-                    <div class="card-icon">
-                        <img src="./images/osmania-university-logo.png" alt="Osmania University">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🌐</span>
+                        <h3>CMS & Platforms</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>M.J. College of Engineering and Technology</h3>
-                        <p class="degree">Bachelor of Engineering (B.E.), Information Technology</p>
-                        <p class="year">2006 - 2010</p>
-                        <p>Organized activities in the university. Led the student's council for a year.</p>
+                    <div class="skill-list">
+                        <div class="skill-item">Drupal 7/8/9/10/11</div>
+                        <div class="skill-item">WordPress 5</div>
+                        <div class="skill-item">Acquia Cloud</div>
+                        <div class="skill-item">AWS</div>
                     </div>
                 </div>
-                <div class="award-card">
-                    <div class="card-icon">
-                        <img src="./images/dsfederal-logo.png" alt="DSFederal">
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🗄️</span>
+                        <h3>Databases & Tools</h3>
                     </div>
-                    <div class="card-content">
-                        <h3>Most Inspirational Employee</h3>
-                        <p class="company-name">DSFederal</p>
-                        <p class="year">August 2022</p>
+                    <div class="skill-list">
+                        <div class="skill-item">MySQL</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">Apache Solr</div>
+                        <div class="skill-item">Memcached</div>
+                        <div class="skill-item">Varnish</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">⚙️</span>
+                        <h3>DevOps & CI/CD</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Jenkins</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">GitLab</div>
+                        <div class="skill-item">Bamboo</div>
+                        <div class="skill-item">Composer</div>
+                        <div class="skill-item">Drush</div>
+                        <div class="skill-item">Docker</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">☁️</span>
+                        <h3>Cloud & Infrastructure</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Amazon EC2</div>
+                        <div class="skill-item">Amazon RDS</div>
+                        <div class="skill-item">Microsoft Azure</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🧪</span>
+                        <h3>Testing & Automation</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Cypress</div>
+                        <div class="skill-item">Playwright</div>
+                        <div class="skill-item">PHPUnit</div>
+                        <div class="skill-item">Behat</div>
+                        <div class="skill-item">Bash Scripting</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">📊</span>
+                        <h3>BI & Data Visualization</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Tableau</div>
+                        <div class="skill-item">QlikView</div>
+                        <div class="skill-item">Power BI</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">💳</span>
+                        <h3>Payment & Billing</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">ACI/Speedpay</div>
+                        <div class="skill-item">Spreedly</div>
+                        <div class="skill-item">CC&B</div>
                     </div>
                 </div>
             </div>
@@ -327,29 +714,61 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-            <div class="contact-links">
-                <a href="mailto:ashrafmhd09@gmail.com" class="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    <span>ashrafmhd09@gmail.com</span>
+            <h2 class="section-title">Let's Build Something Together</h2>
+            <p class="section-subtitle">Open to new opportunities, collaborations, and conversations</p>
+
+            <div class="contact-grid">
+                <a href="mailto:ashrafmhd09@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>ashrafmhd09@gmail.com</p>
+                    </div>
                 </a>
-                <a href="https://www.linkedin.com/in/ashrafmhd/" target="_blank" rel="noopener noreferrer" class="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                    <span>linkedin.com/in/ashrafmhd</span>
+
+                <a href="tel:+17322532557" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <p>(732) 253-2557</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ashrafmhd/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect width="4" height="12" x="2" y="9"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/ashrafmhd</p>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Ashraf Mohammad. All rights reserved.</p>
+            <p>&copy; 2026 Ashraf Mohammad. Crafted with passion and precision.</p>
         </div>
     </footer>
 
+    <script src="./js/timeline.js"></script>
 </body>
 </html>
