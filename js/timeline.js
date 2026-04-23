@@ -168,7 +168,10 @@ function animateCounter(element, target, duration = 2000) {
     const timer = setInterval(() => {
         current += increment;
         if (current >= target) {
-            element.textContent = target + '+';
+            // Only add '+' if the next sibling label is not 'Companies'
+            const label = element.nextElementSibling?.textContent;
+            const suffix = (label === 'Companies') ? '' : '+';
+            element.textContent = target + suffix;
             clearInterval(timer);
         } else {
             element.textContent = Math.floor(current);
